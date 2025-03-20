@@ -1,13 +1,19 @@
-<main>
+<div class="container">
+    <a [routerLink]="['/']">
+    <main>
     <header class="brand-name">
-        <img
-            class="brand-logo"
-            src="house-logo.png"
-            alt="logo"
-            aria-hidden="true"
-        />
+    <img
+    class="brand-logo"
+    src="house-logo.png"
+    alt="logo"
+    aria-hidden="true"
+    />
     </header>
-    <section class="context">
-        <app-home></app-home>
+    </main>
+    </a>
+    <section class="content">
+    <!-- <app-home></app-home> -->
+    <router-outlet></router-outlet>
     </section>
-</main>
+    </div>
+    
